@@ -3,7 +3,7 @@
 namespace Zoop\Order\DataModel\Item;
 
 use Zoop\Order\DataModel\Item\PriceSetInterface;
-use Zoop\Product\DataModel\PriceSetInterface;
+use Zoop\Product\DataModel\ImageSetInterface;
 
 interface ItemInterface
 {
