@@ -44,11 +44,6 @@ interface UserInterface
     public function getSalt();
 
     /**
-     * @ODM\PrePersist
-     */
-    public function createSalt();
-
-    /**
      * @param array $roles
      */
     public function setRoles(array $roles);
