@@ -2,7 +2,7 @@
 
 namespace Zoop\Company\DataModel;
 
-interface FilterCountryInterface
+interface FilterCompaniesInterface
 {
     /**
      * @return array
