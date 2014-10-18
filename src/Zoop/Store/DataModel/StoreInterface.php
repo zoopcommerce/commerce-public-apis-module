@@ -8,10 +8,14 @@ use Zoop\Store\DataModel\RegionalTaxationRuleInterface;
 
 /**
  * @SuppressWarnings(PHPMD.LongVariable)
+ * @SuppressWarnings(PHPMD.ExcessivePublicCount)
+ * @SuppressWarnings(PHPMD.TooManyFields)
+ * @SuppressWarnings(PHPMD.ExcessiveClassComplexity)
  */
 interface StoreInterface
 {
     /**
+     * Alias for getSlug
      * @return string
      */
     public function getId();
@@ -30,8 +34,8 @@ interface StoreInterface
      * @return string
      */
     public function getName();
-
     /**
+     *
      * @param string $name
      */
     public function setName($name);
@@ -39,22 +43,17 @@ interface StoreInterface
     /**
      * @return string
      */
-    public function getSubdomain();
+    public function getPrimaryDomain();
 
     /**
-     * @param string $subdomain
+     * @param string $domain
      */
-    public function setSubdomain($subdomain);
+    public function setPrimaryDomain($domain);
 
     /**
      * @return string
      */
-    public function getCustomDomain();
-
-    /**
-     * @param string $customDomain
-     */
-    public function setCustomDomain($customDomain);
+    public function getDomain();
 
     /**
      * @return array
@@ -67,9 +66,14 @@ interface StoreInterface
     public function setDomains(array $domains);
 
     /**
-     * @param string $domain
+     * @return string
      */
-    public function addDomain($domain);
+    public function getLegacyId();
+
+    /**
+     * @param int $legacyId
+     */
+    public function setLegacyId($legacyId);
 
     /**
      * @return array
@@ -92,6 +96,7 @@ interface StoreInterface
     public function getAddress();
 
     /**
+     *
      * @param AddressInterface $address
      */
     public function setAddress(AddressInterface $address);
@@ -102,6 +107,7 @@ interface StoreInterface
     public function getPhoneNumber();
 
     /**
+     *
      * @param string $phoneNumber
      */
     public function setPhoneNumber($phoneNumber);
@@ -112,6 +118,7 @@ interface StoreInterface
     public function getBusinessName();
 
     /**
+     *
      * @param string $businessName
      */
     public function setBusinessName($businessName);
@@ -122,6 +129,7 @@ interface StoreInterface
     public function getEmail();
 
     /**
+     *
      * @param string $email
      */
     public function setEmail($email);
@@ -132,6 +140,7 @@ interface StoreInterface
     public function getSalesEmail();
 
     /**
+     *
      * @param string $salesEmail
      */
     public function setSalesEmail($salesEmail);
@@ -140,8 +149,9 @@ interface StoreInterface
      * @return string
      */
     public function getDescription();
-
+    
     /**
+     *
      * @param string $description
      */
     public function setDescription($description);
@@ -152,11 +162,13 @@ interface StoreInterface
     public function getRegionalTaxationRules();
 
     /**
+     *
      * @param array $regionalTaxationRules
      */
     public function setRegionalTaxationRules($regionalTaxationRules);
 
     /**
+     *
      * @param string $countryCode
      * @param RegionalTaxationRuleInterface $regionTaxationRule
      */
@@ -168,6 +180,7 @@ interface StoreInterface
     public function getFacebook();
 
     /**
+     *
      * @param string $facebook
      */
     public function setFacebook($facebook);
@@ -178,6 +191,7 @@ interface StoreInterface
     public function getTwitter();
 
     /**
+     *
      * @param string $twitter
      */
     public function setTwitter($twitter);
@@ -188,6 +202,7 @@ interface StoreInterface
     public function getYoutube();
 
     /**
+     *
      * @param string $youtube
      */
     public function setYoutube($youtube);
@@ -198,6 +213,7 @@ interface StoreInterface
     public function getInstagram();
 
     /**
+     *
      * @param string $instagram
      */
     public function setInstagram($instagram);
@@ -208,6 +224,7 @@ interface StoreInterface
     public function getGooglePlus();
 
     /**
+     *
      * @param string $googlePlus
      */
     public function setGooglePlus($googlePlus);
@@ -218,6 +235,7 @@ interface StoreInterface
     public function getPinterest();
 
     /**
+     *
      * @param string $pinterest
      */
     public function setPinterest($pinterest);
@@ -228,6 +246,7 @@ interface StoreInterface
     public function getAuthorizationCode();
 
     /**
+     *
      * @param string $authorizationCode
      */
     public function setAuthorizationCode($authorizationCode);
@@ -238,6 +257,7 @@ interface StoreInterface
     public function getGoogleWebmasterToolsMetaContent();
 
     /**
+     *
      * @param string $googleWebmasterToolsMetaContent
      */
     public function setGoogleWebmasterToolsMetaContent($googleWebmasterToolsMetaContent);
@@ -248,6 +268,7 @@ interface StoreInterface
     public function getGoogleAnalyticsTrackingId();
 
     /**
+     *
      * @param string $googleAnalyticsTrackingId
      */
     public function setGoogleAnalyticsTrackingId($googleAnalyticsTrackingId);
@@ -258,6 +279,7 @@ interface StoreInterface
     public function isMaintenanceMode();
 
     /**
+     *
      * @param boolean $isMaintenanceMode
      */
     public function setIsMaintenanceMode($isMaintenanceMode);
@@ -266,11 +288,6 @@ interface StoreInterface
      * @return string
      */
     public function getUrl();
-
-    /**
-     * @param string $url
-     */
-    public function setUrl($url);
 
     /**
      * @return string
