@@ -44,11 +44,6 @@ interface UserInterface
     public function getSalt();
 
     /**
-     * @param string $value
-     */
-    public function setSalt($value);
-
-    /**
      * @ODM\PrePersist
      */
     public function createSalt();

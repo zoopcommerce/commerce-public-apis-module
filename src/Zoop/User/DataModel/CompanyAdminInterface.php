@@ -2,7 +2,9 @@
 
 namespace Zoop\User\DataModel;
 
-interface CompanyAdminInterface
-{
+use Zoop\User\DataModel\UserInterface;
 
+interface CompanyAdminInterface extends UserInterface
+{
+    
 }
