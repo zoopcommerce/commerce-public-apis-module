@@ -25,6 +25,10 @@
     "require": {
         "php": ">=5.4"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "1.4.*",
+        "phpmd/phpmd": "2.*"
+    },
     "autoload": {
         "psr-0": {
             "Zoop": "src/"

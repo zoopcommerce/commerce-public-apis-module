@@ -2,8 +2,30 @@
 
 namespace Zoop\Theme\DataModel;
 
+use \DateTime;
+
 interface ThemeInterface
 {
+    /**
+     * @return string
+     */
+    public function getCreatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getCreatedOn();
+
+    /**
+     * @return string
+     */
+    public function getUpdatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getUpdatedOn();
+
     /**
      * @return string
      */
@@ -40,12 +62,12 @@ interface ThemeInterface
     public function setDeleteable($deleteable);
 
     /**
-     * @return ArrayCollection
+     * @return array
      */
     public function getAssets();
 
     /**
-     * @param ArrayCollection|array $stores
+     * @param array $assets
      */
     public function setAssets($assets);
 

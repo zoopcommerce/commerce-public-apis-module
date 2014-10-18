@@ -2,24 +2,33 @@
 
 namespace Zoop\Product\DataModel;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Zoop\Category\DataModel\Category;
-use Zoop\Common\File\DataModel\Image;
-use Zoop\Common\DataModel\Url;
-use Zoop\Product\DataModel\ImageSet;
-use Zoop\Store\DataModel\Store;
-//Annotation imports
-use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
-use Zoop\Shard\Annotation\Annotations as Shard;
+use \DateTime;
+use Zoop\Collection\DataModel\CollectionInterface;
+use Zoop\Common\DataModel\UrlInterface;
+use Zoop\Product\DataModel\ImageSetInterface;
 
-/**
- * @ODM\Document
- * @Shard\AccessControl({
- *     @Shard\Permission\State(roles="*", allow="*")
- * })
- */
 interface ProductInterface
 {
+    /**
+     * @return string
+     */
+    public function getCreatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getCreatedOn();
+
+    /**
+     * @return string
+     */
+    public function getUpdatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getUpdatedOn();
+
     /**
      * @return string
      */
@@ -34,16 +43,6 @@ interface ProductInterface
      * @param string $slug
      */
     public function setSlug($slug);
-
-    /**
-     * @return int
-     */
-    public function getLegacyId();
-
-    /**
-     * @param int $legacyId
-     */
-    public function setLegacyId($legacyId);
 
     /**
      * @return string
@@ -66,144 +65,107 @@ interface ProductInterface
     public function setName($name);
 
     /**
-     * @return ArrayCollection
+     * @return array
      */
     public function getStores();
 
     /**
-     *
-     * @param ArrayCollection $stores
+     * @param array $stores
      */
-    public function setStores(ArrayCollection $stores);
+    public function setStores($stores);
 
     /**
-     *
-     * @param Store $store
+     * @param string $store
      */
-    public function addStore(Store $store);
+    public function addStore($store);
 
     /**
-     *
      * @return string
      */
     public function getMetaDescription();
 
     /**
-     *
      * @param type $metaDescription
      */
     public function setMetaDescription($metaDescription);
 
     /**
-     *
-     * @return ArrayCollection
+     * @return array
      */
-    public function getCategories();
+    public function getCollections();
 
     /**
-     *
-     * @param ArrayCollection $categories
+     * @param array $categories
      */
-    public function setCategories(ArrayCollection $categories);
+    public function setCollections($categories);
 
     /**
-     *
-     * @param Category $category
+     * @param CollectionInterface $category
      */
-    public function addCategory(Category $category);
+    public function addCollection(CollectionInterface $category);
 
     /**
-     *
-     * @return ArrayCollection
-     */
-    public function getLegacyCategories();
-
-    /**
-     *
-     * @param ArrayCollection $legacyCategories
-     */
-    public function setLegacyCategories(ArrayCollection $legacyCategories);
-
-    /**
-     *
-     * @param string $category
-     */
-    public function addLegacyCategory($category);
-
-    /**
-     *
      * @return boolean
      */
-    public function getHidden();
+    public function isHidden();
 
     /**
-     *
      * @param boolean $hidden
      */
     public function setHidden($hidden);
 
     /**
-     *
      * @return Url
      */
     public function getUrl();
 
     /**
-     *
-     * @param Url $url
+     * @param UrlInterface $url
      */
-    public function setUrl(Url $url);
+    public function setUrl(UrlInterface $url);
 
     /**
-     *
-     * @return ArrayCollection
+     * @return array
      */
     public function getImageSets();
 
     /**
-     *
-     * @param ArrayCollection $imageSets
+     * @param array $imageSets
      */
-    public function setImageSets(ArrayCollection $imageSets);
+    public function setImageSets(array $imageSets);
 
     /**
-     * @param Image $image
+     * @param ImageSetInterface $image
      */
-    public function addImageSet(ImageSet $image);
+    public function addImageSet(ImageSetInterface $image);
 
     /**
-     *
      * @return string
      */
     public function getState();
 
     /**
-     *
      * @param string $state
      */
     public function setState($state);
 
     /**
-     *
      * @return boolean
      */
-    public function getCanPurchase();
+    public function canPurchase();
 
     /**
-     *
      * @param boolean $canPurchase
      */
     public function setCanPurchase($canPurchase);
 
     /**
-     *
-     * @return Price
+     * @return PriceInterface
      */
     public function getPrice();
 
     /**
-     *
-     * @param Price $price
+     * @param PriceInterface $price
      */
-    public function setPrice(Price $price);
+    public function setPrice(PriceInterface $price);
 }

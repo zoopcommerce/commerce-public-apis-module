@@ -25,6 +25,8 @@ interface TotalInterface
 
     /**
      * @param float $productWholesalePrice
+     *
+     * @SuppressWarnings(PHPMD.LongVariable)
      */
     public function setProductWholesalePrice($productWholesalePrice);
 

@@ -2,7 +2,7 @@
 
 namespace Zoop\Order\DataModel;
 
-class CommissionInterface
+interface CommissionInterface
 {
     /**
      * @return float

@@ -66,18 +66,6 @@ interface OrderInterface
 
     /**
      *
-     * @return int
-     */
-    public function getLegacyId();
-
-    /**
-     *
-     * @param int $legacyId
-     */
-    public function setLegacyId($legacyId);
-
-    /**
-     *
      * @return string
      */
     public function getState();
@@ -280,19 +268,19 @@ interface OrderInterface
     public function setIsWaitingForPayment($isWaitingForPayment);
 
     /**
-     * 
+     *
      * @return ArrayCollection
      */
     public function getItems();
 
     /**
-     * 
+     *
      * @param array|ArrayCollection $items
      */
     public function setItems($items);
 
     /**
-     * 
+     *
      * @param ItemInterface $item
      */
     public function addItem(ItemInterface $item);
