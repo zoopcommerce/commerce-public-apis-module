@@ -56,7 +56,7 @@ interface SingleProductInterface
 
     /**
      * @param boolean $isNotForIndividualSale
-     * 
+     *
      * @SuppressWarnings(PHPMD.LongVariable)
      */
     public function setIsNotForIndividualSale($isNotForIndividualSale);

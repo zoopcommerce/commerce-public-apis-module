@@ -49,7 +49,7 @@ interface UserInterface
     public function setSalt($value);
 
     /**
-     * @ODM\PrePersist 
+     * @ODM\PrePersist
      */
     public function createSalt();
 

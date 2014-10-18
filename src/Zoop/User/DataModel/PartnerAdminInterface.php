@@ -1,8 +1,8 @@
 <?php
 
-namespace Zoop\User\DataModel\Partner;
+namespace Zoop\User\DataModel;
 
 interface PartnerAdminInterface
 {
-    
+
 }

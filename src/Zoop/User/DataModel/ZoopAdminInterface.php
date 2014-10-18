@@ -1,8 +1,8 @@
 <?php
 
-namespace Zoop\User\DataModel\Zoop;
+namespace Zoop\User\DataModel;
 
 interface ZoopAdminInterface
 {
-    
+
 }
