@@ -72,7 +72,7 @@ interface ProductInterface
     /**
      * @param array $stores
      */
-    public function setStores($stores);
+    public function setStores(array $stores);
 
     /**
      * @param string $store
@@ -132,7 +132,7 @@ interface ProductInterface
     /**
      * @param array $imageSets
      */
-    public function setImageSets(array $imageSets);
+    public function setImageSets($imageSets);
 
     /**
      * @param ImageSetInterface $image

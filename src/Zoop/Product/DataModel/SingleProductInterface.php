@@ -28,7 +28,7 @@ interface SingleProductInterface extends ProductInterface
     /**
      * @param array $options
      */
-    public function setOptions(array $options);
+    public function setOptions($options);
 
     /**
      * @param OptionInterface $option
@@ -43,7 +43,7 @@ interface SingleProductInterface extends ProductInterface
     /**
      * @param array $attributes
      */
-    public function setAttributes(array $attributes);
+    public function setAttributes($attributes);
 
     /**
      * @param AttributeInterface $attribute

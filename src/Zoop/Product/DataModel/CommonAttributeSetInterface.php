@@ -30,7 +30,7 @@ interface CommonAttributeSetInterface
      *
      * @param array $attributes
      */
-    public function setAttributes(array $attributes);
+    public function setAttributes($attributes);
 
     /**
      *

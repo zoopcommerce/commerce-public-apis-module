@@ -9,7 +9,7 @@ use Zoop\Shard\Annotation\Annotations as Shard;
 trait StoreTrait
 {
     /**
-     * @ODM\Collection
+     * @ODM\String
      * @ODM\Index
      * @Shard\Zones
      */
