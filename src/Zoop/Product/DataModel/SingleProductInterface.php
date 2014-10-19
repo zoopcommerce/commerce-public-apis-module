@@ -2,12 +2,13 @@
 
 namespace Zoop\Product\DataModel;
 
-use Zoop\Product\DataModel\Option\OptionInterface;
-use Zoop\Product\DataModel\EmbeddedBrandInterface;
-use Zoop\Product\DataModel\SkuDefinitionInterface;
 use Zoop\Product\DataModel\Attribute\AttributeInterface;
+use Zoop\Product\DataModel\EmbeddedBrandInterface;
+use Zoop\Product\DataModel\Option\OptionInterface;
+use Zoop\Product\DataModel\ProductInterface;
+use Zoop\Product\DataModel\SkuDefinitionInterface;
 
-interface SingleProductInterface
+interface SingleProductInterface extends ProductInterface
 {
     /**
      * @return EmbeddedBrandInterface

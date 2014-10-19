@@ -5,14 +5,14 @@ namespace Zoop\Product\DataModel;
 interface ShippingRateInterface
 {
     /**
-     * @return Country
+     * @return string
      */
     public function getCountry();
 
     /**
-     * @param Country $country
+     * @param stringe $country The 2 letter country code
      */
-    public function setCountry(Country $country);
+    public function setCountry($country);
 
     /**
      * @return float

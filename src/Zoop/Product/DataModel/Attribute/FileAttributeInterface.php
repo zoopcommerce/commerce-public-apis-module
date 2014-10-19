@@ -2,7 +2,7 @@
 
 namespace Zoop\Product\DataModel\Attribute;
 
-use Zoop\Common\DataModel\FileInterface;
+use Zoop\Common\File\DataModel\FileInterface;
 
 interface FileAttributeInterface
 {

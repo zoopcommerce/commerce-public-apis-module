@@ -149,7 +149,7 @@ interface StoreInterface
      * @return string
      */
     public function getDescription();
-    
+
     /**
      *
      * @param string $description

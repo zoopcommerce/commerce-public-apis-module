@@ -2,6 +2,7 @@
 
 namespace Zoop\Product\DataModel;
 
+use Zoop\Product\DataModel\BundledProductInterface;
 use Zoop\Product\DataModel\ProductInterface;
 
 /**
@@ -10,7 +11,7 @@ use Zoop\Product\DataModel\ProductInterface;
  *     @Shard\Permission\Basic(roles="*", allow="*")
  * })
  */
-interface BundleInterface
+interface BundleInterface extends ProductInterface
 {
     /**
      * @return array
@@ -23,7 +24,7 @@ interface BundleInterface
     public function setBundledProducts($bundledProducts);
 
     /**
-     * @param ProductInterface $product
+     * @param BundledProductInterface $product
      */
-    public function addBundledProduct(ProductInterface $product);
+    public function addBundledProduct(BundledProductInterface $product);
 }

@@ -6,5 +6,5 @@ use Zoop\User\DataModel\UserInterface;
 
 interface PartnerAdminInterface extends UserInterface
 {
-    
+
 }
