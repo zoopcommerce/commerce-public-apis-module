@@ -2,11 +2,7 @@
 
 namespace Zoop\Store\DataModel;
 
-interface FilterStoreInterface
+interface FilterStoreInterface extends StoresTraitInterface
 {
-    public function getStores();
 
-    public function setStores(array $stores);
-
-    public function addStore($store);
 }
