@@ -8,7 +8,7 @@ interface PinGatewayConfigInterface
      * @return string
      */
     public function getSecretKey();
-    
+
     /**
      * @param string $secretKey
      */

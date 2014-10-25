@@ -22,12 +22,12 @@ interface OrderInterface
      * @return string
      */
     public function getCreatedBy();
-            
+
     /**
      * @return DateTime
      */
     public function getUpdatedOn();
-    
+
     /**
      * @return string
      */
