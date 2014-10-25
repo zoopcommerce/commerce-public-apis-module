@@ -4,7 +4,7 @@ namespace Zoop\Order\DataModel\Item;
 
 use Zoop\Product\DataModel\DimensionsInterface;
 
-interface PhysicalSkuInterface
+interface PhysicalSkuInterface extends SkuInterface
 {
     /**
      * @return DimensionsInterface
