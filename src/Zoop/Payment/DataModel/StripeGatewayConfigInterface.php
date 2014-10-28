@@ -8,7 +8,7 @@ interface StripeGatewayConfigInterface
      * @return string
      */
     public function getApiKey();
-    
+
     /**
      * @param string $apiKey
      */
