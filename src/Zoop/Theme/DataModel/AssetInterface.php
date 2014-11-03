@@ -22,14 +22,14 @@ interface AssetInterface
     public function setName($name);
 
     /**
-     * @return AssetInterface
+     * @return ThemeInterface|AssetInterface
      */
     public function getParent();
 
     /**
-     * @param AssetInterface $parent
+     * @param ThemeInterface|AssetInterface $parent
      */
-    public function setParent(AssetInterface $parent);
+    public function setParent($parent);
 
     /**
      * @return boolean

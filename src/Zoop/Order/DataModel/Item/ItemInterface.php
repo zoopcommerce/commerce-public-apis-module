@@ -8,16 +8,6 @@ use Zoop\Product\DataModel\ImageSetInterface;
 interface ItemInterface
 {
     /**
-     * @return int
-     */
-    public function getLegacyId();
-
-    /**
-     * @param int $legacyId
-     */
-    public function setLegacyId($legacyId);
-
-    /**
      * @return string
      */
     public function getName();

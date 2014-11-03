@@ -4,7 +4,7 @@ namespace Zoop\Order\DataModel\Item;
 
 use Zoop\Common\DataModel\FileInterface;
 
-interface DigitalSkuInterface
+interface DigitalSkuInterface extends SkuInterface
 {
     /**
      * @return string

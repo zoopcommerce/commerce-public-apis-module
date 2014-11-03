@@ -19,9 +19,19 @@ interface OrderInterface
     public function getCreatedOn();
 
     /**
+     * @return string
+     */
+    public function getCreatedBy();
+
+    /**
      * @return DateTime
      */
     public function getUpdatedOn();
+
+    /**
+     * @return string
+     */
+    public function getUpdatedBy();
 
     /**
      * @return string
@@ -78,15 +88,15 @@ interface OrderInterface
 
     /**
      *
-     * @return ArrayCollection
+     * @return array
      */
     public function getHistory();
 
     /**
      *
-     * @param ArrayCollection $history
+     * @param array $history
      */
-    public function setHistory(ArrayCollection $history);
+    public function setHistory($history);
 
     /**
      *
@@ -197,15 +207,15 @@ interface OrderInterface
 
     /**
      *
-     * @return ArrayCollection
+     * @return array
      */
     public function getPromotions();
 
     /**
      *
-     * @param ArrayCollection $promotions
+     * @param array $promotions
      */
-    public function setPromotions(ArrayCollection $promotions);
+    public function setPromotions($promotions);
 
     /**
      *
@@ -269,7 +279,7 @@ interface OrderInterface
 
     /**
      *
-     * @return ArrayCollection
+     * @return array
      */
     public function getItems();
 

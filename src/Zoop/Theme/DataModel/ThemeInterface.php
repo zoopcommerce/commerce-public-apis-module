@@ -3,6 +3,7 @@
 namespace Zoop\Theme\DataModel;
 
 use \DateTime;
+use Zoop\Common\File\DataModel\ImageInterface;
 
 interface ThemeInterface
 {
@@ -75,4 +76,14 @@ interface ThemeInterface
      * @param AssetInterface $asset
      */
     public function addAsset(AssetInterface $asset);
+
+    /**
+     * @return ImageInterface
+     */
+    public function getScreenshot();
+
+    /**
+     * @param ImageInterface $screenshot
+     */
+    public function setScreenshot(ImageInterface $screenshot);
 }
