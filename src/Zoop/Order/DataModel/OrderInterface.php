@@ -173,13 +173,25 @@ interface OrderInterface
      *
      * @return AddressInterface
      */
-    public function getAddress();
+    public function getCustomerAddress();
 
     /**
      *
      * @param AddressInterface $address
      */
-    public function setAddress(AddressInterface $address);
+    public function setCustomerAddress(AddressInterface $customerAddress);
+    
+    /**
+     *
+     * @return AddressInterface
+     */
+    public function getShippingAddress();
+
+    /**
+     *
+     * @param AddressInterface $address
+     */
+    public function setShippingAddress(AddressInterface $shippingAddress);
 
     /**
      *
