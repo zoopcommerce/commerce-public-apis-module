@@ -2,6 +2,6 @@
 
 namespace Zoop\Theme\Lexer\Regex;
 
-interface JavascriptRegexInterface
+interface JavascriptRegexInterface extends RegexInterface
 {
 }

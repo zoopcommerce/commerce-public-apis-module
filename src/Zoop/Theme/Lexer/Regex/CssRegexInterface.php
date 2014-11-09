@@ -2,6 +2,6 @@
 
 namespace Zoop\Theme\Lexer\Regex;
 
-interface CssRegexInterface
+interface CssRegexInterface extends RegexInterface
 {
 }
