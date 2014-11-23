@@ -2,7 +2,7 @@
 
 namespace Zoop\Theme\Parser;
 
-use Zoop\Theme\Parser\ThemeParserInterface;
+use Zoop\Theme\DataModel\ThemeInterface;
 
 interface ThemeParserInterface
 {
@@ -10,7 +10,7 @@ interface ThemeParserInterface
      * Iterates through the themes` assets to find additional assets 
      * within content
      * 
-     * @param ThemeParserInterface $theme
+     * @param ThemeInterface $theme
      */
-    public function parse(ThemeParserInterface $theme);
+    public function parse(ThemeInterface $theme);
 }
