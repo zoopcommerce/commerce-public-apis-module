@@ -2,7 +2,7 @@
 
 namespace Zoop\Payment\DataModel;
 
-interface PayPalGatewayConfigInterface
+interface PaypalGatewayConfigInterface
 {
     /**
      * @return string
