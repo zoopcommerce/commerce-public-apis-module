@@ -2,7 +2,7 @@
 
 namespace Zoop\Payment\Gateway;
 
-use Zoop\Payment\Gateway\PurchaseConfig;
+use Zoop\Payment\Omnipay\PurchaseConfig;
 use Zoop\Order\DataModel\OrderInterface;
 
 /**
