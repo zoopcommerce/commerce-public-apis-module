@@ -2,10 +2,31 @@
 
 namespace Zoop\Theme\DataModel;
 
+use \DateTime;
 use Zoop\Theme\DataModel\ThemeInterface;
 
 interface AssetInterface
 {
+    /**
+     * @return string
+     */
+    public function getCreatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getCreatedOn();
+
+    /**
+     * @return string
+     */
+    public function getUpdatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getUpdatedOn();
+
     /**
      * @return string
      */

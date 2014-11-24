@@ -4,7 +4,7 @@ namespace Zoop\Theme\Parser;
 
 use Zoop\Theme\Tokenizer\TokenStream;
 
-interface ParserInterface
+interface TokenParserInterface
 {
     public function parse(TokenStream $tokenStream);
 }
