@@ -25,7 +25,7 @@ interface LexerInterface
      * @return string
      */
     public function getRelativeFilePath();
-    
+
     /**
      * @param string $relativeFilePath
      */

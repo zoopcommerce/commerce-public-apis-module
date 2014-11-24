@@ -180,7 +180,7 @@ interface OrderInterface
      * @param AddressInterface $address
      */
     public function setCustomerAddress(AddressInterface $customerAddress);
-    
+
     /**
      *
      * @return AddressInterface

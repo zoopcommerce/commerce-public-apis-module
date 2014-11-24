@@ -26,7 +26,7 @@ interface AssetInterface
      * @return DateTime
      */
     public function getUpdatedOn();
-    
+
     /**
      * @return string
      */
