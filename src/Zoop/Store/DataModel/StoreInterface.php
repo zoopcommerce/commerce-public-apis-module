@@ -298,4 +298,24 @@ interface StoreInterface
      * @param string $checkoutUrl
      */
     public function setCheckoutUrl($checkoutUrl);
+
+    /**
+     * @return boolean
+     */
+    public function isActive();
+
+    /**
+     * @param boolean $isActive
+     */
+    public function setIsActive($isActive);
+    
+    /**
+     * @return boolean
+     */
+    public function canDisplay();
+
+    /**
+     * @param boolean $canDisplay
+     */
+    public function setCanDisplay($canDisplay);
 }
