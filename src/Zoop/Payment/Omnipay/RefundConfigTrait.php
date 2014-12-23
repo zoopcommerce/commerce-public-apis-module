@@ -19,7 +19,7 @@ trait RefundConfigTrait
     {
         $this->transactionReference = (string) $transactionReference;
     }
-    
+
     /**
      * @param float $amount
      */
@@ -27,7 +27,7 @@ trait RefundConfigTrait
     {
         $this->amount = $amount;
     }
-    
+
     /**
      * @return float
      */

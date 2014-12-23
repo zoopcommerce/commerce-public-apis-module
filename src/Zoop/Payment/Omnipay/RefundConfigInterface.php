@@ -9,10 +9,10 @@ namespace Zoop\Payment\Omnipay;
 interface RefundConfigInterface
 {
     public function setTransactionReference($transactionReference);
-    
+
     public function getTransactionReference();
-    
+
     public function getAmount();
-    
+
     public function setAmount($amount);
 }
