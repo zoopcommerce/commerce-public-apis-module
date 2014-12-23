@@ -4,8 +4,9 @@ namespace Zoop\Theme\DataModel;
 
 use \DateTime;
 use Zoop\Common\File\DataModel\ImageInterface;
+use Zoop\Store\DataModel\StoresFilterInterface;
 
-interface ThemeInterface
+interface ThemeInterface extends StoresFilterInterface
 {
     /**
      * @return string

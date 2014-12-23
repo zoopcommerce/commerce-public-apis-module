@@ -3,9 +3,10 @@
 namespace Zoop\Theme\DataModel;
 
 use \DateTime;
+use Zoop\Store\DataModel\StoresFilterInterface;
 use Zoop\Theme\DataModel\ThemeInterface;
 
-interface AssetInterface
+interface AssetInterface extends StoresFilterInterface
 {
     /**
      * @return string

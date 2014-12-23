@@ -2,6 +2,7 @@
 
 namespace Zoop\Entity\DataModel;
 
+use \DateTime;
 use Zoop\Common\DataModel\AddressInterface;
 use Zoop\Common\DataModel\SocialInterface;
 //Annotation imports
@@ -10,6 +11,26 @@ use Zoop\Shard\Annotation\Annotations as Shard;
 
 interface EntityInterface
 {
+    /**
+     * @return DateTime
+     */
+    public function getCreatedOn();
+
+    /**
+     * @return string
+     */
+    public function getCreatedBy();
+
+    /**
+     * @return DateTime
+     */
+    public function getUpdatedOn();
+
+    /**
+     * @return string
+     */
+    public function getUpdatedBy();
+
     /**
      * Alias for getSlug
      * @return string
