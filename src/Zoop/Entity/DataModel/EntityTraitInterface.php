@@ -1,20 +1,20 @@
 <?php
 
-namespace Zoop\Store\DataModel;
+namespace Zoop\Entity\DataModel;
 
 //Annotation imports
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 use Zoop\Shard\Annotation\Annotations as Shard;
 
-interface StoreTraitInterface
+interface EntityTraitInterface
 {
     /**
      * @return string
      */
-    public function getStore();
+    public function getEntity();
 
     /**
-     * @param string $store
+     * @param string $entity
      */
-    public function setStore($store);
+    public function setEntity($entity);
 }

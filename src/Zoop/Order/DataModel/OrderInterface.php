@@ -3,6 +3,7 @@
 namespace Zoop\Order\DataModel;
 
 use \DateTime;
+use Zoop\Store\DataModel\StoreFilterInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Zoop\Common\DataModel\AddressInterface;
 use Zoop\Order\DataModel\Item\ItemInterface;
@@ -11,7 +12,7 @@ use Zoop\Order\DataModel\CommissionInterface;
 use Zoop\Order\DataModel\HistoryInterface;
 use Zoop\Promotion\DataModel\PromotionInterface;
 
-interface OrderInterface
+interface OrderInterface extends StoreFilterInterface
 {
     /**
      * @return DateTime
