@@ -2,12 +2,23 @@
 
 namespace Zoop\Store\DataModel;
 
-use Zoop\Entity\DataModel\EntityInterface;
+use Zoop\Customer\DataModel\CustomerInterface;
+use Zoop\Entity\DataModel\ChildEntityInterface;
 use Zoop\Common\DataModel\CurrencyInterface;
 use Zoop\Store\DataModel\RegionalTaxationRuleInterface;
 
-interface StoreInterface extends EntityInterface
+interface StoreInterface extends ChildEntityInterface
 {
+    /**
+     * @return CustomerInterface
+     */
+    public function getCustomer();
+
+    /**
+     * @return CustomerInterface
+     */
+    public function setCustomer(CustomerInterface $customer);
+
     /**
      * @return string
      */
