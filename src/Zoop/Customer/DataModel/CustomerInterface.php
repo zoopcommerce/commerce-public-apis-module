@@ -11,7 +11,7 @@ interface CustomerInterface extends ChildEntityInterface
      * @return PartnerInterface
      */
     public function getPartner();
-    
+
     /**
      * @return PartnerInterface
      */

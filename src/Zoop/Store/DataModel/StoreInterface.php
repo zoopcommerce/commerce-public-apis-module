@@ -13,12 +13,12 @@ interface StoreInterface extends ChildEntityInterface
      * @return CustomerInterface
      */
     public function getCustomer();
-    
+
     /**
      * @return CustomerInterface
      */
     public function setCustomer(CustomerInterface $customer);
-    
+
     /**
      * @return string
      */

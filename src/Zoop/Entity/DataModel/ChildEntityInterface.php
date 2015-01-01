@@ -13,7 +13,7 @@ interface ChildEntityInterface extends EntityInterface
      * @return EntityInterface
      */
     public function getParent();
-    
+
     /**
      * @return EntityInterface
      */
