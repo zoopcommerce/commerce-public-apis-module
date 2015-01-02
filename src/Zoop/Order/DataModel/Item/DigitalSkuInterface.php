@@ -2,7 +2,7 @@
 
 namespace Zoop\Order\DataModel\Item;
 
-use Zoop\Common\DataModel\FileInterface;
+use Zoop\Common\File\DataModel\FileInterface;
 
 interface DigitalSkuInterface extends SkuInterface
 {

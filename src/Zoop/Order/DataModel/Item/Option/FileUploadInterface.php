@@ -2,7 +2,7 @@
 
 namespace Zoop\Order\DataModel\Item\Option;
 
-use Zoop\Common\DataModel\FileInterface;
+use Zoop\Common\File\DataModel\FileInterface;
 
 interface FileUploadInterface extends OptionInterface
 {
