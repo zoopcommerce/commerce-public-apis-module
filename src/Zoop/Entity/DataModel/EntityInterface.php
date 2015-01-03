@@ -116,6 +116,11 @@ interface EntityInterface
     public function setDomains(array $domains);
 
     /**
+     * @param string $domain
+     */
+    public function addDomain($domain);
+
+    /**
      * @return string
      */
     public function getUrl();
